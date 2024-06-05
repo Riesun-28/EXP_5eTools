@@ -426,6 +426,127 @@
           }
         ]
       }
+    },
+    {
+      "name": "Altoran Ratfolk",
+      "source": "EXPCC",
+      "page": 5,
+      "foundryImg": "icons/svg/mystery-man.svg",
+      "alias": ["Ratfolk"],
+      "creatureTypes": ["humanoid"],
+      "size": ["S", "M"],
+      "ability": [
+        {
+          "choose": {
+            "weighted": {
+              "from": ["str", "dex", "con", "int", "wis", "cha"],
+              "weights": [1, 1, 1]
+            }
+          }
+        },
+        {
+          "choose": {
+            "weighted": {
+              "from": ["str", "dex", "con", "int", "wis", "cha"],
+              "weights": [2, 1]
+            }
+          }
+        }
+      ],
+      "speed": { "walk": 30, "climb": 30, "swim": 30 },
+      "languageProficiencies": [
+        {
+          "common": true,
+          "any": 1
+        }
+      ],
+      "skillProficiencies": [
+        {
+          "perception": true
+        }
+      ],
+      "entries": [
+        {
+          "type": "entries",
+          "name": "Creature Type",
+          "entries": ["You are a Humanoid."]
+        },
+        {
+          "type": "entries",
+          "name": "Languages",
+          "entries": [
+            "You can speak, read, and write Common and one other language of your choice."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Keen Senses",
+          "entries": [
+            "You are proficient in the Perception skill, and you have advantage on Wisdom (Perception) checks that rely on sound or smell."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Cornered Fury",
+          "entries": [
+            "While your hit points are at or below a number equal to twice your level, you have advantage on all melee attacks."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Gnashing Incisors",
+          "entries": [
+            "You have a powerful bite that can gnaw through flesh and steel. Your bite is a natural weapon, which counts as a simple melee weapon with the finesse property with which you are proficient. On a hit, the bite deals {@damage 1d8} + your Strength or Dexterity modifier piercing damage. This damage is doubled against objects and structures."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Impeccable Balance",
+          "entries": [
+            "You have advantage on saves and ability checks to avoid being knocked prone."
+          ]
+        }
+      ],
+      "fluff": {
+        "entries": [
+          "There are quite a few different frog-like humanoids or monsters you could encounter out in the swamps, but how many of them are brightly colored and ready to give you some strange poisons that can cause all sorts of odd reactions, like sudden death? While some may confuse the Grung for other creatures, like bullywugs and grippli, Grung resemble small humanoids with strong  toad or frog-like legs that end in webbed feet, making them capable of long leaps without extensive training.",
+          {
+            "type": "entries",
+            "name": "Age",
+            "entries": [
+              "Grung mature to adulthood in a single year, but have been known to live up to 100 years."
+            ]
+          },
+          {
+            "type": "entries",
+            "name": "Alignment",
+            "entries": [
+              "Most Grung are lawful, having been raised in a strict caste system. They tend towards evil as well, coming from a culture where social advancement occurs rarely, and most often because another member of your army has died."
+            ]
+          },
+          {
+            "type": "entries",
+            "name": "Abilities",
+            "entries": [
+              "Grung continuously secrete a light poisonous substance that is harmless to them (despite not being immune to other poisons and venoms). This secretion is quite sticky, and Grungs can concentrate to produce a highly toxic substance that they can apply to any weapon. When exposed to air, Grung poison quickly deteriorates and breaks down within a minute, making it extremely hard to harvest and bottle. Their saliva contains the same but weakened poison."
+            ]
+          },
+          {
+            "type": "entries",
+            "name": "Amphibious",
+            "entries": [
+              "Grungs are amphibious, but although they could survive underwater, they were better climbers than swimmers, moreso needing to submerge themselves in water for comfort from lack of dry skin rather than being natural swimmers."
+            ]
+          },
+          {
+            "type": "entries",
+            "name": "Behaviour",
+            "entries": [
+              "Due to their size, Grung often avoided direct confrontation and preferred ambushing their prey. The most common ambush strategy was laying camouflaged and waiting for their opponents, Grung from other tribes, or quarry to venture into the range of their short bows or throwing spears. If their prey survived the initially volley of poisoned weapons, the Grung would flee across the tree tops so as not to leave any trail."
+            ]
+          }
+        ]
+      }
     }
   ]
 }
