@@ -1,0 +1,431 @@
+{
+  "_meta": {
+    "sources": [
+      {
+        "json": "EXPplayersGuide",
+        "full": "EXP Player's Guide",
+        "abbreviation": "EXPPG",
+        "version": "3.1"
+      },
+      {
+        "json": "EXPcharacterCreation",
+        "full": "EXP Character Creation Options",
+        "abbreviation": "EXPCC",
+        "version": "3.1"
+      }
+    ],
+    "dateAdded": 1717551804,
+    "dateLastModified": 1717551804
+  },
+  "race": [
+    {
+      "name": "Tak'Garun",
+      "source": "EXPPG",
+      "page": 11,
+      "foundryImg": "icons/svg/mystery-man.svg",
+      "alias": ["Bugbear"],
+      "creatureTypes": ["humanoid"],
+      "creatureTypeTags": ["goblinoid"],
+      "size": ["S", "M"],
+      "ability": [
+        {
+          "choose": {
+            "weighted": {
+              "from": ["str", "dex", "con", "int", "wis", "cha"],
+              "weights": [1, 1, 1]
+            }
+          }
+        },
+        {
+          "choose": {
+            "weighted": {
+              "from": ["str", "dex", "con", "int", "wis", "cha"],
+              "weights": [2, 1]
+            }
+          }
+        }
+      ],
+      "speed": 30,
+      "darkvision": 60,
+      "skillProficiencies": [
+        {
+          "stealth": true
+        }
+      ],
+      "languageProficiencies": [
+        {
+          "common": true,
+          "goblin": true
+        }
+      ],
+      "traitTags": ["Powerful Build"],
+      "additionalSpells": [
+        {
+          "innate": {
+            "1": {
+              "daily": {
+                "1": ["calm emotions", "sanctuary"]
+              }
+            }
+          },
+          "ability": {
+            "choose": ["int", "wis", "cha"]
+          }
+        }
+      ],
+      "entries": [
+        {
+          "type": "entries",
+          "name": "Creature Type",
+          "entries": [
+            "You are a Humanoid. You are also considered a goblinoid for any prerequisite or effect that requires you to be a goblinoid."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Languages",
+          "entries": ["You can speak, read, and write Common and Goblin."]
+        },
+        {
+          "type": "entries",
+          "name": "Darkvision",
+          "entries": [
+            "You can see in dim light within 60 feet of you as if it were bright light and in darkness as if it were dim light. You discern colors in that darkness only as shades of gray."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Fey Ancestry",
+          "entries": [
+            "You have advantage on saving throws you make to avoid or end the {@condition charmed} condition on yourself."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Opportunistic Hunter",
+          "entries": [
+            "The Tak'Garun have a long and storied history of being accomplished hunters. Once per turn, when you make an attack roll at advantage, you deal an additional {@damage 1d6} damage."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Long-Limbed",
+          "entries": [
+            "When you make a melee attack on your turn, your reach for it is 5 feet greater than normal."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Powerful Build",
+          "entries": [
+            "You count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Hidden Harrier",
+          "entries": [
+            "You are proficient in the {@skill Stealth} skill. Additionally, when you use the Help Action on an ally towards an attack, your range to do so is 30 feet, and that ally has advantage on all attack rolls until the end of their next turn. This trait can only be used once per combat encounter."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Springborn",
+          "entries": [
+            "You have spent enough time in the magical hot springs to channel their calming power. You can cast the {@spell sanctuary} and {@spell calm emotions} spells with this trait, without expending a spell slot. Once you cast either of these spells with this trait, you can't cast that spell with it again until you finish a long rest. You can also cast these using spell slots you have of the appropriate level.",
+            "Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells when cast with this trait (choose when you select this race)."
+          ]
+        }
+      ],
+      "fluff": {
+        "entries": [
+          "Bugbears, known as Tak’Garun in their homeland of Arovatan, are a serene and disciplined people, grounded in the relentless pursuit of personal and communal excellence. Central to Tak’Garun philosophy is a steadfast commitment to tranquility and unwavering focus.",
+          {
+            "type": "entries",
+            "name": "Age",
+            "entries": ["Tak'Garun reach adulthood at 16 and live up to 80."]
+          },
+          {
+            "type": "entries",
+            "name": "Alignment",
+            "entries": [
+              "Tak'Garun tend to be Lawful by culture. The structure of their communities prioritize the prefection of nurtured talent in service of the group as a whole."
+            ]
+          },
+          {
+            "type": "entries",
+            "name": "Martial Prowess",
+            "entries": [
+              "Tak’Garun society reveres martial prowess as a means of achieving harmony and balance within oneself. Instead of brute force, they seek mastery of their minds and bodies through rigorous training in martial arts and combat techniques. Every Bugbear strives to achieve a state of inner tranquility and fluidity in movement, embodying the ideals of discipline and self-control."
+            ]
+          },
+          {
+            "type": "entries",
+            "name": "Harmony with Nature",
+            "entries": [
+              "In harmony with their environment, Tak’Garun Bugbears hold a profound reverence for nature and its intricacy. Preferring secluded regions amidst dense forests and serene mountains, they establish settlements where they tend to lush gardens, and engage in meditative practices. These communities seamlessly integrate with the natural world, embodying their profound bond with the earth."
+            ]
+          },
+          {
+            "type": "entries",
+            "name": "Duty",
+            "entries": [
+              "Within Tak’Garun culture, family and community hold utmost importance. Led by respected elders who embody wisdom, compassion, and duty, Bugbear clans prioritize loyalty and unity. Tak’Garun individuals staunchly defend and uphold their kin, ready to undertake any endeavor to safeguard their families and provide support. Committed to fulfilling their responsibilities, they stand ready to defend their homeland and extend aid to those in need, reflecting their unwavering dedication to their community."
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "Altoran Gnoll",
+      "source": "EXPCC",
+      "page": 3,
+      "foundryImg": "icons/svg/mystery-man.svg",
+      "alias": ["Gnoll"],
+      "creatureTypes": ["humanoid"],
+      "size": ["M"],
+      "ability": [
+        {
+          "choose": {
+            "weighted": {
+              "from": ["str", "dex", "con", "int", "wis", "cha"],
+              "weights": [1, 1, 1]
+            }
+          }
+        },
+        {
+          "choose": {
+            "weighted": {
+              "from": ["str", "dex", "con", "int", "wis", "cha"],
+              "weights": [2, 1]
+            }
+          }
+        }
+      ],
+      "speed": 30,
+      "darkvision": 60,
+      "languageProficiencies": [
+        {
+          "common": true,
+          "goblin": true
+        }
+      ],
+      "traitTags": ["Natural Weapon"],
+      "additionalSpells": [
+        {
+          "innate": {
+            "1": ["vicious mockery"]
+          },
+          "ability": {
+            "choose": ["int", "wis", "cha"]
+          }
+        }
+      ],
+      "entries": [
+        {
+          "type": "entries",
+          "name": "Creature Type",
+          "entries": ["You are a Humanoid."]
+        },
+        {
+          "type": "entries",
+          "name": "Languages",
+          "entries": [
+            "You can speak, read, and write Common and one other language of your choice."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Darkvision",
+          "entries": [
+            "You can see in dim light within 60 feet of you as if it were bright light and in darkness as if it were dim light. You discern colors in that darkness only as shades of gray."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Bite",
+          "entries": [
+            "Gnolls have powerful jaws thhat they ofoten incorporate in the way they fight. You can use your bite as a natural weapon with the finesse property. When you hit with it, you deal {@damage 1d6} + your Strength or Dexterity modifer piercing damage."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "A Good Heckling",
+          "entries": [
+            "Gnolls learn to distract and disorient their opponents by taunting. You know the {@spell vicious mockery} cantrip, and your spellcasting ability is Intelligence, Wisdom, or Charisma when cast with this trait (choose when you select this race)."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Bolstering Cackle",
+          "entries": [
+            "Gnolls approach combat with a glee that is infectious. Once per combat encounter, you can use a bonus action to a give a number of creatures euqla to your proficiency bonus temporary hit points equal to 4 times your proficiency bonus."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Rampage",
+          "entries": [
+            "When you reduce a creature to 0 hit points with a melee attack on your turn, you can immediately use your bonus action to move up to half your speed and make an attack with your Bite. You can use this trait a number of times equal to your proficiency bonus, and regain all expended uses after a long rest."
+          ]
+        }
+      ],
+      "fluff": {
+        "entries": [
+          "Altoran Gnolls commonly worship the Wolf, the Lovers, and the Shepherd. They value their freedom and tend to travel in close knit matriarchal clans. They are commonly found in the forests and plains of Cennvarai and Muhanna, though sometimes they’ve been known to organize flotillas to near by islands if resources are scarce. In very rare cases they are known to even engage in piracy. Gnolls are generally disliked in the cities as they often raid trade caravans that travel through their territory. Some Gnolls will leave their clans to become adventurers or strike their own paths.",
+          {
+            "type": "entries",
+            "name": "Age",
+            "entries": [
+              "Gnolls mature to adulthood after 18 years. They can live to 200 years of age, but this is rarely the case outside of the Matriarch of the clan. The life of a Gnoll is often times violent and swift."
+            ]
+          },
+          {
+            "type": "entries",
+            "name": "Alignment",
+            "entries": [
+              "Gnolls tend to be chaotic by culture. The structure of their clans are fluid and tend to have those deemd to be 'strong of mind, body, or will' taking positions of leadership. A Matriarch is expected to be a mature member of the clan that is the strongest in all of these qualities, and will defend this position if the need arises."
+            ]
+          },
+          {
+            "type": "entries",
+            "name": "Strength",
+            "entries": [
+              "Gnoll Matriarchs are both the most powerful warrior and the wisest of the clan. However, to the Gnolls, strength is less about physical prowess and more the pursuit of excellence in one's capabilities."
+            ]
+          },
+          {
+            "type": "entries",
+            "name": "Family",
+            "entries": [
+              "Gnoll clans are combinations of several extended families, but the bonds between these families are as strong as kin. Gnolls who leave their packs will join mercenary troupes or adventuring parties. They are staunch allies and will put their life on the line for their chosen family."
+            ]
+          },
+          {
+            "type": "entries",
+            "name": "Fun",
+            "entries": [
+              "Gnolls love to laugh and horse around with their friends and family, creating a very animate space wherever they may settle. Part of the Matriarch's duty is to wrangle and focus the will of her pack. Gnolls that have struck out on their own can be found participating in raucous parties or wandering into different festivals. Even in the heat of combat, a Gnoll might find something to cackle about. Life is to be enjoyed even in the toughest of situations."
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "Altoran Grung",
+      "source": "EXPCC",
+      "page": 4,
+      "foundryImg": "icons/svg/mystery-man.svg",
+      "alias": ["Grung"],
+      "creatureTypes": ["humanoid"],
+      "size": ["S"],
+      "ability": [
+        {
+          "choose": {
+            "weighted": {
+              "from": ["str", "dex", "con", "int", "wis", "cha"],
+              "weights": [1, 1, 1]
+            }
+          }
+        },
+        {
+          "choose": {
+            "weighted": {
+              "from": ["str", "dex", "con", "int", "wis", "cha"],
+              "weights": [2, 1]
+            }
+          }
+        }
+      ],
+      "speed": { "walk": 30, "climb": 30 },
+      "resist": ["poison"],
+      "languageProficiencies": [
+        {
+          "common": true,
+          "grung": true
+        }
+      ],
+      "traitTags": ["Amphibious"],
+      "entries": [
+        {
+          "type": "entries",
+          "name": "Creature Type",
+          "entries": ["You are a Humanoid."]
+        },
+        {
+          "type": "entries",
+          "name": "Languages",
+          "entries": ["You can speak, read, and write Common and Grung."]
+        },
+        {
+          "type": "entries",
+          "name": "Amphibious",
+          "entries": ["You can breathe both air and water."]
+        },
+        {
+          "type": "entries",
+          "name": "Poison Resistance",
+          "entries": [
+            "You have resistance to poison damage and have advantage on saving throws you make to avoid or end the poisoned condition on yourself."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Poisonous Skin",
+          "entries": [
+            "As a free action on your turn, you can choose to secrete poison from your skin. Until the start of your next turn, any creature that grapples you or otherwise comes into direct contact with your skin must succeed on a DC 15 Constitution saving throw or become poisoned for 1 minute. Once the poisoned creature is no longer in direct contact with you, it can repeat the saving throw at the end of each of its turns, ending the condition on a success.",
+            "Alternatively, you can choose to apply your poison to a weapon when you make an attack. On hit, the target must succeed on a DC 15 Constitution saving throw or take an additional {@damage 2d4} poison damage.",
+            "This trait can only be used once per comabt encounter."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Standing Leap",
+          "entries": [
+            "Your long jump is up to 30 feet, and your high jump is up to 15 feet, with or without a running start."
+          ]
+        }
+      ],
+      "fluff": {
+        "entries": [
+          "There are quite a few different frog-like humanoids or monsters you could encounter out in the swamps, but how many of them are brightly colored and ready to give you some strange poisons that can cause all sorts of odd reactions, like sudden death? While some may confuse the Grung for other creatures, like bullywugs and grippli, Grung resemble small humanoids with strong  toad or frog-like legs that end in webbed feet, making them capable of long leaps without extensive training.",
+          {
+            "type": "entries",
+            "name": "Age",
+            "entries": [
+              "Grung mature to adulthood in a single year, but have been known to live up to 100 years."
+            ]
+          },
+          {
+            "type": "entries",
+            "name": "Alignment",
+            "entries": [
+              "Most Grung are lawful, having been raised in a strict caste system. They tend towards evil as well, coming from a culture where social advancement occurs rarely, and most often because another member of your army has died."
+            ]
+          },
+          {
+            "type": "entries",
+            "name": "Abilities",
+            "entries": [
+              "Grung continuously secrete a light poisonous substance that is harmless to them (despite not being immune to other poisons and venoms). This secretion is quite sticky, and Grungs can concentrate to produce a highly toxic substance that they can apply to any weapon. When exposed to air, Grung poison quickly deteriorates and breaks down within a minute, making it extremely hard to harvest and bottle. Their saliva contains the same but weakened poison."
+            ]
+          },
+          {
+            "type": "entries",
+            "name": "Amphibious",
+            "entries": [
+              "Grungs are amphibious, but although they could survive underwater, they were better climbers than swimmers, moreso needing to submerge themselves in water for comfort from lack of dry skin rather than being natural swimmers."
+            ]
+          },
+          {
+            "type": "entries",
+            "name": "Behaviour",
+            "entries": [
+              "Due to their size, Grung often avoided direct confrontation and preferred ambushing their prey. The most common ambush strategy was laying camouflaged and waiting for their opponents, Grung from other tribes, or quarry to venture into the range of their short bows or throwing spears. If their prey survived the initially volley of poisoned weapons, the Grung would flee across the tree tops so as not to leave any trail."
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}
