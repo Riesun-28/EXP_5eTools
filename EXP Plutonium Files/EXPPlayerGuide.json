@@ -606,6 +606,11 @@
         },
         {
           "type": "entries",
+          "name": "Darkvision",
+          "entries": ["You have Darkvision out to a range of 60 feet."]
+        },
+        {
+          "type": "entries",
           "name": "Storm Born",
           "entries": ["You have resistance to lightning damage."]
         },
@@ -651,6 +656,213 @@
           }
         ]
       }
+    },
+    {
+      "name": "Kor'Rokka",
+      "source": "EXPCC",
+      "page": 7,
+      "foundryImg": "icons/svg/mystery-man.svg",
+      "creatureTypes": ["humanoid", "giant"],
+      "size": ["M"],
+      "ability": [
+        {
+          "choose": {
+            "weighted": {
+              "from": ["str", "dex", "con", "int", "wis", "cha"],
+              "weights": [1, 1, 1]
+            }
+          }
+        },
+        {
+          "choose": {
+            "weighted": {
+              "from": ["str", "dex", "con", "int", "wis", "cha"],
+              "weights": [2, 1]
+            }
+          }
+        }
+      ],
+      "speed": { "walk": 30, "swim": 30 },
+      "darkvision": 60,
+      "languageProficiencies": [
+        {
+          "common": true,
+          "any": 1
+        }
+      ],
+      "skillProficiencies": [{ "perception": true }],
+      "traitTags": ["Amphibious", "Powerful Build"],
+      "entries": [
+        {
+          "type": "entries",
+          "name": "Creature Type",
+          "entries": [
+            "You are a Humanoid. You are also considered a Giant for any prerequisite or effect that requires it."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Languages",
+          "entries": [
+            "You can speak, read, and write Common and one other language of your choice."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Darkvision",
+          "entries": ["You have Darkvision out to a range of 60 feet."]
+        },
+        {
+          "type": "entries",
+          "name": "Keen Senses",
+          "entries": ["You have proficiency in the Perception skill."]
+        },
+        {
+          "type": "entries",
+          "name": "Accelerated Regeneration",
+          "entries": [
+            "You can call upon your natural powers of regeneration to help sustain you in battle. While in combat, you can use your bonus action and spend a Hit Die. You regain hit points equal to a roll of the Hit Die + your Constitution modifier. If you take fire or acid damage, you cannot use this trait until the end of your next turn."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Amphibious",
+          "entries": ["You can breathe both air and water."]
+        },
+        {
+          "type": "entries",
+          "name": "Powerful Build",
+          "entries": [
+            "You count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Poison Quills",
+          "entries": [
+            "You have quills that grow on various parts of your body. These quills are natural ranged weapons with the finesse property and a 30 foot short range and a 90 foot long range. On a hit, the quills do {@damage 1d6} + your Strength or Dexterity modifier piercing damage.",
+            "Once per short or long rest, you can declare you've coated your quills in poison. On a hit, they deal an additional {@damage 2d6} poison damage and the target must make a Constitution saving throw (DC = 8 + your proficiency bonus + your Constitution modifier). On a failed save, the target is poisoned for 1 minute. It can reroll this save at the end of each of its turns, ending the condition on a success."
+          ]
+        }
+      ],
+      "fluff": {
+        "entries": [
+          "The Kor’ Rokka of the Koh’ Harrun League are giant kin that have resided on the Harra Archipelago for hundreds of years. While the League is a collection of island nations that are populated mostly by humans, tritons, and sea elves, the Kor’ Rokka have integrated into the League and can be found throughout the different cities that dot the islands. The Kor’ Rokka have impressive regenerative powers, capabale of preventing their bodies from aging. It’s because of this that scholars believe the Kor’ Rokka are related to trolls, but question whether this ancestry occurs naturally. The Kor’ Rokka are excellent swimmers and can breath underwater. Their powerful build and height make them phenomenal warriors and their keen senses make them expert hunters. While they may be physically intimidating, the Kor’ Rokka are a generally reserved people, with a culture that values inner peace and careful consideration of one’s actions.",
+          {
+            "type": "entries",
+            "name": "Age",
+            "entries": [
+              "Kor'Rokka reach maturity at 100 years of age. They are believed to be ageless beyond that."
+            ]
+          },
+          {
+            "type": "entries",
+            "name": "Restraint and Compassion",
+            "entries": [
+              "Kor’ Rokka culture values self control; because they live a long life they believe they have time to carefully consider their actions and future. A long life can build perspective, but also can make it easier for someone to lose track of what is important. The Kor’ Rokka believe in compassion and empathy."
+            ]
+          },
+          {
+            "type": "entries",
+            "name": "Loyalty and Honour",
+            "entries": [
+              "The Kor’ Rokka have long lives and long memories. They value their word and believe that strong relationships are necessary when faced with such a long life. Loyalty and honor are paramount to building trust and strengthening the bonds between people. You will find it difficult to locate a more loyal and stalwart friend."
+            ]
+          },
+          {
+            "type": "entries",
+            "name": "Autonomy",
+            "entries": [
+              "Like many of the other cultures that make up the Koh’Harrun League, the Kor’Rokka believe in allowing others to choose their own path. Their City of Rokka’Ahn is fairly isolated from others, and seldom allows visitors outside of the their neighbors in the league. To this end, they will defend others in their desires for autonomy and will fight fiercely against those who would over reach."
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "Requiem",
+      "source": "EXPCC",
+      "page": 8,
+      "foundryImg": "icons/svg/mystery-man.svg",
+      "creatureTypes": ["humanoid", "celestial"],
+      "size": ["M"],
+      "ability": [
+        {
+          "choose": {
+            "weighted": {
+              "from": ["str", "dex", "con", "int", "wis", "cha"],
+              "weights": [1, 1, 1]
+            }
+          }
+        },
+        {
+          "choose": {
+            "weighted": {
+              "from": ["str", "dex", "con", "int", "wis", "cha"],
+              "weights": [2, 1]
+            }
+          }
+        }
+      ],
+      "speed": 30,
+      "languageProficiencies": [
+        {
+          "common": true,
+          "any": 1
+        }
+      ],
+      "resist": ["thunder"],
+      "entries": [
+        {
+          "type": "entries",
+          "name": "Creature Type",
+          "entries": [
+            "You are a Celestial. You are also considered a Humanoid for any prerequisite or effect that requires it."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Languages",
+          "entries": [
+            "You can speak, read, and write Common and one other language of your choice, typically Celestial."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Discerning Ear",
+          "entries": [
+            "You have advantage on Wisdom (Perception) checks that rely on sound and Wisdom (Insight) checks that use someone's voice to determine their intentions or feelings."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Made in Her Form",
+          "entries": [
+            "Shaped in the memory of the Divine Being's fallen daughter, Requiem are infused with a divine toughness. Your hit point maximum increases by 1, and increases by 1 again whenver you gain a level."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Religious Performer",
+          "entries": [
+            "You have advantage on Charisma (Performance) and Intelligence (Religion) checks that involve singing. You also have advantage on all ability checks using musical instruments."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Sound Hardened",
+          "entries": ["You have resistance to thunder damage."]
+        },
+        {
+          "type": "entries",
+          "name": "The Melody",
+          "entries": [
+            "The Requiem are one and all possessed of a singular connection to something they call the Melody, gifting them the ability of magical song. They can use this magical song to add a discordant note to their attacks.",
+            "Whenever you deal damage with an attack, you can deal additional thunder damage equal to your proficiency bonus. You can use this trait a number of times equal to your proficiency bonus, and regain all expended uses after a long rest.",
+            "Additionally, you can use a bonus action to create a harmless sound-based sensory effect or project your voice."
+          ]
+        }
+      ]
     }
   ]
 }
