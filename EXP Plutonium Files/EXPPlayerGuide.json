@@ -509,40 +509,144 @@
       ],
       "fluff": {
         "entries": [
-          "There are quite a few different frog-like humanoids or monsters you could encounter out in the swamps, but how many of them are brightly colored and ready to give you some strange poisons that can cause all sorts of odd reactions, like sudden death? While some may confuse the Grung for other creatures, like bullywugs and grippli, Grung resemble small humanoids with strong  toad or frog-like legs that end in webbed feet, making them capable of long leaps without extensive training.",
+          "To the people at large, Ratfolk have the most difficulty with life in Altoras. They are deft of foot and are sometimes drawn to a criminal lifestyle, particularly those born in the city of New Burrow, forced to choose between living in the underground city ruled by the mob or on the Kaiju infested jungles above. Though this is the unfortunate situation for most Ratfolk, they are no more naturally violent or larcenous than others, but old stereotypes linger, especially with the affluant of New Burrow actively putting their interests above all else.",
+          {
+            "type": "entries",
+            "name": "Age",
+            "entries": ["Ratfolk mature at age 12 and live up to 80 years."]
+          },
+          {
+            "type": "entries",
+            "name": "Determined Survivalist",
+            "entries": [
+              "Curiosity, ingenuity and survival; these three concepts drove the ratfolk to where they are today. Seemingly ever-present in the nooks and crannies of civilization. Ratfolk are affable even though their large ratlike appearance may be offputting to some."
+            ]
+          },
+          {
+            "type": "entries",
+            "name": "Society",
+            "entries": [
+              "Ratfolk society is similar to what one would expect in a more honorable thieves’ guild; Pickpocket from those who have more than they need, never steal from another from the group (unless they’re asking for it) and never travel without an accomplice. These three unwritten rules have allowed most Ratfolk societies to prosper, at least for those who embrace the easy path. Many brave Ratfolk eschew this way of life and strike out on their own in the dangerous world, looking for likeminded folk who focus on things besides their own selfish needs."
+            ]
+          },
+          {
+            "type": "entries",
+            "name": "A Place in the World",
+            "entries": [
+              "A Ratfolk adventurer is one who seeks a place in a world where acceptance and acknowledgement for their kind doesn’t come easily. Though Ratfolk are cautious, they are neither fearful nor stupid, and the opportunity to face enemies and beat traps give Ratfolk a sense of challenge. For Ratfolk, the chance to complete a task no one else can give them, the best chance to earn their keep with a group, if not the world. Ratfolk dislike the norms placed on them, but while they don’t seek to affect such change in attitude on a large scale, they place great value on the opinions of those few they come to trust. This trust comes with much time and effort, and can be lost easily if abused."
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "Altoran Yuan-ti",
+      "source": "EXPCC",
+      "page": 6,
+      "foundryImg": "icons/svg/mystery-man.svg",
+      "alias": ["Yuan-ti"],
+      "creatureTypes": ["humanoid"],
+      "size": ["S", "M"],
+      "ability": [
+        {
+          "choose": {
+            "weighted": {
+              "from": ["str", "dex", "con", "int", "wis", "cha"],
+              "weights": [1, 1, 1]
+            }
+          }
+        },
+        {
+          "choose": {
+            "weighted": {
+              "from": ["str", "dex", "con", "int", "wis", "cha"],
+              "weights": [2, 1]
+            }
+          }
+        }
+      ],
+      "speed": 30,
+      "darkvision": 60,
+      "resist": ["lightning"],
+      "languageProficiencies": [
+        {
+          "common": true,
+          "any": 1
+        }
+      ],
+      "additionalSpells": [
+        {
+          "innate": {
+            "3": {
+              "daily": {
+                "1": ["invisibility"]
+              }
+            }
+          },
+          "ability": {
+            "choose": ["int", "wis", "cha"]
+          },
+          "known": {
+            "1": ["lightning lure#c", "schocking grasp#c"]
+          }
+        }
+      ],
+      "entries": [
+        {
+          "type": "entries",
+          "name": "Creature Type",
+          "entries": ["You are a Humanoid."]
+        },
+        {
+          "type": "entries",
+          "name": "Languages",
+          "entries": [
+            "You can speak, read, and write Common and one other language of your choice."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Storm Born",
+          "entries": ["You have resistance to lightning damage."]
+        },
+        {
+          "type": "entries",
+          "name": "Storm Serpent's Boon",
+          "entries": [
+            "You know the {@spell lightning lure} and {@spell shocking grasp} cantrips. Starting at 3rd level, you can cast the {@spell invisibility} with this trait without expending a spell slot. Once cast in this way, you cannot cast it in this way again until you finish a long rest. You can also cast this spell using spell slots you have of the appopriate level.",
+            "Your spellcasting ability for these spells is Intelligence, Wisdom, or Charisma (choose when you select this race)."
+          ]
+        }
+      ],
+      "fluff": {
+        "entries": [
+          "The Yuan-ti of Altoras can be found deep in the jungles of Muhana and Jagara. They were said to be once humans struggling to survive in the hostile jungles. In their histories they tell tales of a ritual that imbued them with the power of a great sky serpent. A leviathan said to roam the skies, never seen, but felt in the savagery of the storms that ride its wake. They are a secretive people, that entertain few visitors. They are said to live in cities hidden in the jungle ruled by clerics of this great serpent and The Shepherd.",
           {
             "type": "entries",
             "name": "Age",
             "entries": [
-              "Grung mature to adulthood in a single year, but have been known to live up to 100 years."
+              "Yuan-ti mature at the same rate as humans do, but live slightly longer to an average of 150 years. After the age of 40, it becomes difficult to determine how old one might be as they retain their youthful appearance."
             ]
           },
           {
             "type": "entries",
-            "name": "Alignment",
+            "name": "Privacy",
             "entries": [
-              "Most Grung are lawful, having been raised in a strict caste system. They tend towards evil as well, coming from a culture where social advancement occurs rarely, and most often because another member of your army has died."
+              "Yuan-ti society values their traditions and are wary of those who come to them. They are a private and self reflective people, preferring to keep matters to those directly involved or affected by them. This can lead outsiders to think of them as cold and difficult to connect with."
             ]
           },
           {
             "type": "entries",
-            "name": "Abilities",
+            "name": "Stoicism",
             "entries": [
-              "Grung continuously secrete a light poisonous substance that is harmless to them (despite not being immune to other poisons and venoms). This secretion is quite sticky, and Grungs can concentrate to produce a highly toxic substance that they can apply to any weapon. When exposed to air, Grung poison quickly deteriorates and breaks down within a minute, making it extremely hard to harvest and bottle. Their saliva contains the same but weakened poison."
+              "The Yuan-ti believe in the sanctity of nature, and this belief and respect for the cycles of nature have led to an acceptance of circumstances they can’t control. They value self control and focus their attention to finding the things that are within their power. To the Yuan-ti the world is full of things beyond their ken; survival comes from grasping what can be understood and worked with."
             ]
           },
           {
             "type": "entries",
-            "name": "Amphibious",
+            "name": "Resilience",
             "entries": [
-              "Grungs are amphibious, but although they could survive underwater, they were better climbers than swimmers, moreso needing to submerge themselves in water for comfort from lack of dry skin rather than being natural swimmers."
-            ]
-          },
-          {
-            "type": "entries",
-            "name": "Behaviour",
-            "entries": [
-              "Due to their size, Grung often avoided direct confrontation and preferred ambushing their prey. The most common ambush strategy was laying camouflaged and waiting for their opponents, Grung from other tribes, or quarry to venture into the range of their short bows or throwing spears. If their prey survived the initially volley of poisoned weapons, the Grung would flee across the tree tops so as not to leave any trail."
+              "Through the guidance of The Shepherd and the unity of the clan the Yuan-ti believe they can survive the harshness of the world around them. They draw strength from the world around them and the histories of their people. With the storm in their veins they are masters of their deep jungle homes. A Yuan-ti is expected to be able to draw strength from within and the clan when faced with difficulty from both without and within."
             ]
           }
         ]
