@@ -1,0 +1,1 @@
+This file is to eventually be committed to 5eTools in full as a collection, but for now is an individual file with the goal of making imports into Foundry as easy as possible for our players. Just copy the link as a Custom URL and import to your hearts content!
