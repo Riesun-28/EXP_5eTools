@@ -864,5 +864,367 @@
         }
       ]
     }
+  ],
+  "background": [
+    {
+      "name": "Crown Guard",
+      "source": "EXPCC",
+      "page": 43,
+      "skillProficiencies": [
+        {
+          "investigation": true,
+          "perception": true
+        }
+      ],
+      "toolProficiencies": [
+        {
+          "vehicles (land)": true,
+          "vehicles (water)": true
+        }
+      ],
+      "languageProficiencies": [
+        {
+          "anyStandard": 1
+        }
+      ],
+      "startingEquipment": [
+        {
+          "_": [
+            "common clothes|phb",
+            {
+              "item": "pouch|phb",
+              "containsValue": 1000
+            },
+            {
+              "special": "mess kit"
+            },
+            {
+              "special": "signal whistle"
+            },
+            {
+              "special": "expired badge with your house's royal insignia"
+            }
+          ]
+        }
+      ],
+      "entries": [
+        {
+          "type": "list",
+          "style": "list-hang-notitle",
+          "items": [
+            {
+              "type": "item",
+              "name": "Skill Proficiencies:",
+              "entry": "{@skill Investigation}, {@skill Perception}"
+            },
+            {
+              "type": "item",
+              "name": "Tool Proficiencies:",
+              "entry": "{@filter Vehicles (land)|items|source=phb;dmg|miscellaneous=mundane|type=vehicle (land)}, {@filter Vehicles (water)|items|source=phb;dmg|miscellaneous=mundane|type=vehicle (water)}"
+            },
+            {
+              "type": "item",
+              "name": "Languages:",
+              "entry": "The native language of your sovereign"
+            },
+            {
+              "type": "item",
+              "name": "Equipment:",
+              "entry": "A pouch with 10 gp, a set of common clothes, a mess kit, a signal whistle, an expired badge with your houses royal insignia on it."
+            }
+          ]
+        },
+        {
+          "name": "Feature: Preceding Reputation",
+          "type": "entries",
+          "entries": [
+            "Your former station grants you respect among certain circles of high society. If you were discharged honorably, this functions among your home nation and its allies. If you were discharged dishonorably, it functions among neutral and enemy states of your home nation. When among these circles, you get free lodging from the organizations you fraternize with. Your protective presence calms the elite around you, granting you advantage on persuasion checks to coax information out of them."
+          ],
+          "data": { "isFeature": true }
+        }
+      ]
+    },
+    {
+      "name": "Deck Mage",
+      "source": "EXPCC",
+      "page": 43,
+      "skillProficiencies": [
+        {
+          "choose": {
+            "count": 2,
+            "from": [
+              "arcana",
+              "history",
+              "perception",
+              "performance",
+              "survival"
+            ]
+          }
+        }
+      ],
+      "toolProficiencies": [
+        {
+          "vehicles (water)": true,
+          "gaming set": true
+        }
+      ],
+      "startingEquipment": [
+        {
+          "_": [
+            "hooded lantern|phb",
+            "hempen rope (50 feet)|phb",
+            {
+              "item": "pouch|phb",
+              "containsValue": 1500
+            }
+          ]
+        },
+        {
+          "a": ["dice set|phb"],
+          "b": ["playing card set|phb"]
+        }
+      ],
+      "additionalSpells": [
+        {
+          "known": {
+            "_": [
+              {
+                "choose": {
+                  "count": 1,
+                  "from": [
+                    "control flame#c",
+                    "gust#c",
+                    "fire bolt#c",
+                    "mending#c",
+                    "shape water#c"
+                  ]
+                }
+              }
+            ]
+          },
+          "innate": {
+            "_": {
+              "daily": {
+                "1e": [
+                  {
+                    "choose": {
+                      "from": ["level=1|class=Druid", "level=1|class=Wizard"]
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "expanded": {
+            "s1": ["fog cloud", "purify food and drink"],
+            "s2": ["gust of wind", "scorching ray"],
+            "s3": ["water breathing", "tidal wave"],
+            "s4": ["control water", "fabricate"],
+            "s5": ["cone of cold", "control winds"]
+          }
+        }
+      ],
+      "entries": [
+        {
+          "type": "list",
+          "style": "list-hang-notitle",
+          "items": [
+            {
+              "type": "item",
+              "name": "Skill Proficiencies:",
+              "entry": "Choose two from {@skill Arcana}, {@skill History}, {@skill Perception}, {@skill Performance}, or {@skill Survival}"
+            },
+            {
+              "type": "item",
+              "name": "Tool Proficiencies:",
+              "entry": "{@filter Vehicles (water)|items|source=phb;dmg|miscellaneous=mundane|type=vehicle (water)}, and {@item dice set|phb} or {@item playing card set|phb}"
+            },
+            {
+              "type": "item",
+              "name": "Equipment:",
+              "entry": "A hooded lantern, 50ft of hempen Rope, lantern oil, an axe, a deck of cards or some dice, and a pouch of 15gp"
+            }
+          ]
+        },
+        {
+          "name": "Feature: Naval Champion",
+          "type": "entries",
+          "entries": [
+            "When you select this background, you learn two cantrips from Mending, Fire Bolt, Gust, Shape Water, or Control Flame.",
+            "Additionally, you learn a 1st-level spell of your choice from the druid or wizard spell list. You can use this feature to cast this spell without expending a spell slot. Once you cast it in this way, you can't cast the spell in this way again until you finish a long rest. You can also cast this spell using spell slots you have of the appropriate level.",
+            "Your spellcasting ability for this spell is Intelligence, Wisdom, or Charisma (choose when you select this background)."
+          ],
+          "data": { "isFeature": true }
+        },
+        {
+          "name": "Deck Mage Spells",
+          "type": "entries",
+          "entries": [
+            "{@i Prerequisite: Spellcasting or Pact Magic class feature}",
+            "For you, the spells on the Azorius Guild Spells table are added to the spell list of your spellcasting class. (If you are a multiclass character with multiple spell lists, these spells are added to all of them.)",
+            {
+              "type": "table",
+              "caption": "Deck Mage Spells",
+              "colStyles": ["col-2 text-center", "col-10"],
+              "colLabels": ["Spell Level", "Spells"],
+              "rows": [
+                ["1st", "{@spell fog cloud}, {@spell purify food and drink}"],
+                ["2nd", "{@spell gust of wind}, {@spell scorching ray}"],
+                ["3rd", "{@spell tidal wave}, {@spell water breathing}"],
+                ["4th", "{@spell control water}, {@spell fabricate}"],
+                ["5th", "{@spell cone of cold}, {@spell control winds}"]
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Dwarven Glassblower",
+      "source": "EXPCC",
+      "page": 44,
+      "skillProficiencies": [
+        {
+          "investigation": true,
+          "sleight of hand": true
+        }
+      ],
+      "toolProficiencies": [
+        {
+          "glassblower's tools": true,
+          "jeweler's tools": true
+        }
+      ],
+      "languageProficiencies": [
+        {
+          "anyStandard": 1,
+          "dwarvish": true
+        }
+      ],
+      "startingEquipment": [
+        {
+          "_": [
+            "fine clothes|phb",
+            "jeweler's tools|phb",
+            {
+              "item": "purse|phb",
+              "containsValue": 1500
+            },
+            {
+              "special": "five small examples of your craft"
+            }
+          ]
+        }
+      ],
+      "entries": [
+        {
+          "type": "list",
+          "style": "list-hang-notitle",
+          "items": [
+            {
+              "type": "item",
+              "name": "Skill Proficiencies:",
+              "entry": "{@skill Investigation}, {@skill Sleight of Hand}"
+            },
+            {
+              "type": "item",
+              "name": "Tool Proficiencies:",
+              "entry": "{@item Jeweler's Tools}, {@filter Vehicles (water)|items|source=phb;dmg|miscellaneous=mundane|type=vehicle (water)}"
+            },
+            {
+              "type": "item",
+              "name": "Languages:",
+              "entry": "Orcish"
+            },
+            {
+              "type": "item",
+              "name": "Equipment:",
+              "entry": "Fine clothes, a purse containing 15 gp, five small examples of your craft, and a set of jeweler's tools."
+            }
+          ]
+        },
+        {
+          "name": "Feature: Artisan's Appraisal",
+          "type": "entries",
+          "entries": [
+            "You have advantage on Intelligence (Investigation) checks made to evaluate the worth of minerals and objects crafted from them (this includes jewelry, weapons, and practical, household objects), and on Intelligence (History) checks regarding their origin and manufacture."
+          ],
+          "data": { "isFeature": true }
+        }
+      ]
+    },
+    {
+      "name": "Fearsome Raider",
+      "source": "EXPCC",
+      "page": 44,
+      "skillProficiencies": [
+        {
+          "intimidation": true,
+          "perception": true
+        }
+      ],
+      "toolProficiencies": [
+        {
+          "navigator's tools": true,
+          "vehicles (water)": true
+        }
+      ],
+      "languageProficiencies": [
+        {
+          "orc": true
+        }
+      ],
+      "startingEquipment": [
+        {
+          "_": [
+            "common clothes|phb",
+            "hempen rope (50 feet)|phb",
+            {
+              "item": "pouch|phb",
+              "containsValue": 1000
+            },
+            {
+              "special": "a leather bound trophy from a kill"
+            }
+          ]
+        }
+      ],
+      "entries": [
+        {
+          "type": "list",
+          "style": "list-hang-notitle",
+          "items": [
+            {
+              "type": "item",
+              "name": "Skill Proficiencies:",
+              "entry": "{@skill Intimidate}, {@skill Perception}"
+            },
+            {
+              "type": "item",
+              "name": "Tool Proficiencies:",
+              "entry": "{@item Navigator's Tools}, {@item Glassblower's Tools}"
+            },
+            {
+              "type": "item",
+              "name": "Languages:",
+              "entry": "Dwarvish and one language of your choice"
+            },
+            {
+              "type": "item",
+              "name": "Equipment:",
+              "entry": "Fine clothes, a purse containing 15 gp, five small examples of your craft, and a set of jeweler's tools."
+            }
+          ]
+        },
+        {
+          "name": "Feature: Preceding Reputation",
+          "type": "entries",
+          "entries": [
+            "You have advantage on Intelligence (Investigation) checks made to evaluate the worth of minerals and objects crafted from them (this includes jewelry, weapons, and practical, household objects), and on Intelligence (History) checks regarding their origin and manufacture."
+          ],
+          "data": { "isFeature": true }
+        }
+      ]
+    }
   ]
 }
