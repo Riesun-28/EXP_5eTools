@@ -2,20 +2,14 @@
   "_meta": {
     "sources": [
       {
-        "json": "EXPplayersGuide",
-        "full": "EXP Player's Guide",
-        "abbreviation": "EXPPG",
-        "version": "3.1"
-      },
-      {
         "json": "EXPcharacterCreation",
         "full": "EXP Character Creation Options",
         "abbreviation": "EXPCC",
         "version": "3.1"
       }
     ],
-    "dateAdded": 1717551804,
-    "dateLastModified": 1717551804
+    "dateAdded": 1718834812,
+    "dateLastModified": 1718834823
   },
   "subclass": [
     {
