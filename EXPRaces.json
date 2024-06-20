@@ -1236,9 +1236,9 @@
       "classSource": "PHB",
       "page": 10,
       "subclassFeatures": [
-        "College of the Arcane Tailor|Bard||T|EXPCC|3",
-        "A Tailored Experience|Bard||T|EXPCC|6",
-        "It's All in the Stitching|Bard||T|EXPCC|14"
+        "College of the Arcane Tailor|Bard||Tailor|EXPCC|3",
+        "A Tailored Experience|Bard||Tailor|EXPCC|6",
+        "It's All in the Stitching|Bard||Tailor|EXPCC|14"
       ],
       "foundryImg": "icons/equipment/back/cloak-collared-purple-gold.webp"
     }
@@ -1250,18 +1250,18 @@
       "page": 10,
       "className": "Bard",
       "classSource": "PHB",
-      "subclassShortName": "T",
+      "subclassShortName": "Tailor",
       "subclassSource": "EXPCC",
       "level": 3,
       "entries": [
         "Bardic Colleges teach bards many ways to imbue their performances with arcane power. The college of Arcane Tailors dedicates itself to making costumes that enthrall and intrigue. The Bardic Regalia they create are famous for being the centrepieces of great performances and powerful arcane catalysts.",
         {
           "type": "refSubclassFeature",
-          "subclassFeature": "Bardic Regalia|Bard|PHB|T|EXPCC|3"
+          "subclassFeature": "Bardic Regalia|Bard||Tailor|EXPCC|3"
         },
         {
           "type": "refSubclassFeature",
-          "subclassFeature": "Bewitching Raiments|Bard|PHB|T|EXPCC|3"
+          "subclassFeature": "Bewitching Raiments|Bard||Tailor|EXPCC|3"
         }
       ]
     },
@@ -1271,7 +1271,7 @@
       "page": 10,
       "className": "Bard",
       "classSource": "PHB",
-      "subclassShortName": "T",
+      "subclassShortName": "Tailor",
       "subclassSource": "EXPCC",
       "level": 3,
       "header": 1,
@@ -1286,7 +1286,7 @@
       "page": 10,
       "className": "Bard",
       "classSource": "PHB",
-      "subclassShortName": "T",
+      "subclassShortName": "Tailor",
       "subclassSource": "EXPCC",
       "level": 3,
       "header": 1,
@@ -1300,7 +1300,7 @@
       "page": 10,
       "className": "Bard",
       "classSource": "PHB",
-      "subclassShortName": "T",
+      "subclassShortName": "Tailor",
       "subclassSource": "EXPCC",
       "level": 6,
       "entries": [
@@ -1315,7 +1315,7 @@
       "page": 10,
       "className": "Bard",
       "classSource": "PHB",
-      "subclassShortName": "T",
+      "subclassShortName": "Tailor",
       "subclassSource": "EXPCC",
       "level": 14,
       "entries": [
