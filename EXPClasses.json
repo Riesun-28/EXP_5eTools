@@ -44,15 +44,7 @@
       "subclassSource": "CollegeArcaneTailor",
       "level": 3,
       "entries": [
-        "Bardic Colleges teach bards many ways to imbue their performances with arcane power. The college of Arcane Tailors dedicates itself to making costumes that enthrall and intrigue. The Bardic Regalia they create are famous for being the centrepieces of great performances and powerful arcane catalysts.",
-        {
-          "type": "refSubclassFeature",
-          "subclassFeature": "Bardic Regalia|Bard||Tailor|CollegeArcaneTailor|3"
-        },
-        {
-          "type": "refSubclassFeature",
-          "subclassFeature": "Bewitching Raiments|Bard||Tailor|CollegeArcaneTailor|3"
-        }
+        "Bardic Colleges teach bards many ways to imbue their performances with arcane power. The college of Arcane Tailors dedicates itself to making costumes that enthrall and intrigue. The Bardic Regalia they create are famous for being the centrepieces of great performances and powerful arcane catalysts."
       ]
     },
     {
@@ -64,7 +56,6 @@
       "subclassShortName": "Tailor",
       "subclassSource": "CollegeArcaneTailor",
       "level": 3,
-      "header": 1,
       "entries": [
         "When you choose this archetype at 3rd level, you can craft your own Bardic Regalia. The Regalia counts as magical light armor and provides an AC of 13 + your Dexterity modifier. You may craft the armor when you take a short or long rest, and can change its appearance at will. You may add harmless sensory effects to the Regalia at will and instantly soil or clean it along with heating and chilling it. The Regalia can be used as an arcane focus for casting spells.",
         "As an action, you can extend a part of your Regalia to strike your enemies. Make a melee spell attack against a target up to 60 ft. away from you. On a hit, the attack deals 1d10 force damage + your Charisma modifier. This attack’s damage increases by 1d10 when you reach 5th Level (2d10), 11th level (3d10), and 17th level (4d10). This feature can benefit from the bonuses to spell attacks given by spell foci."
@@ -78,7 +69,6 @@
       "subclassShortName": "Tailor",
       "subclassSource": "CollegeArcaneTailor",
       "level": 3,
-      "header": 1,
       "entries": [
         "At 3rd level, you may expend a use of your Bardic Inspiration to cast Charm Person using your Regalia as an arcane focus. At 6th level, you can also expend a use of your Bardic Inspiration to cast Incite Greed in the same manner. You may only use this feature on creatures that can see you."
       ]
