@@ -27,6 +27,8 @@
       "shortName": "Tailor",
       "subclassFeatures": [
         "College of the Arcane Tailor|Bard||Tailor|CollegeArcaneTailor|3",
+        "Bardic Regalia|Bard||Tailor|CollegeArcaneTailor|3",
+        "Bewitching Raiments|Bard||Tailor|CollegeArcaneTailor|3",
         "A Tailored Experience|Bard||Tailor|CollegeArcaneTailor|6",
         "It's All in the Stitching|Bard||Tailor|CollegeArcaneTailor|14"
       ],
