@@ -1,56 +1,61 @@
 {
-  "_meta": {
-    "sources": [
-      {
-        "json": "EXPcharacterCreation",
-        "full": "EXP Character Creation Options",
-        "abbreviation": "EXPCC",
-        "version": "3.1"
-      }
-    ],
-    "dateAdded": 1718834812,
-    "dateLastModified": 1718834823
-  },
-  "subclass": [
-    {
-      "name": "College of the Arcane Tailor",
-      "source": "EXPCC",
-      "className": "Bard",
-      "classSource": "PHB",
-      "shortName": "Tailor",
-      "subclassFeatures": [
-        "College of the Arcane Tailor|Bard||Tailor|EXPcharacterCreation|3",
-        "A Tailored Experience|Bard||Tailor|EXPcharacterCreation|6",
-        "It's All in the Stitching|Bard||Tailor|EXPcharacterCreation|14"
-      ],
-      "foundryImg": "icons/equipment/back/cloak-collared-purple-gold.webp"
-    }
-  ],
-    "subclassFeature": [
-    {
-      "name": "College of the Arcane Tailor",
-      "source": "EXPcharacterCreation",
-      "page": 10,
-      "className": "Bard",
-      "classSource": "PHB",
-      "subclassShortName": "Tailor",
-      "subclassSource": "EXPcharacterCreation",
-      "level": 3,
-      "entries": [
-        "Bardic Colleges teach bards many ways to imbue their performances with arcane power. The college of Arcane Tailors dedicates itself to making costumes that enthrall and intrigue. The Bardic Regalia they create are famous for being the centrepieces of great performances and powerful arcane catalysts.",
-        {
-          "type": "refSubclassFeature",
-          "subclassFeature": "Bardic Regalia|Bard||Tailor|EXPCC|3"
-        },
-        {
-          "type": "refSubclassFeature",
-          "subclassFeature": "Bewitching Raiments|Bard||Tailor|EXPCC|3"
-        }
-      ]
-    },
+	"_meta": {
+		"sources": [
+			{
+				"json": "EXPcharacterCreation",
+				"abbreviation": "EXPCC",
+				"full": "Experience Point Character Creation Options",
+				"convertedBy": [
+					"Riesun"
+				],
+				"version": "1.0",
+				"color": "750000"
+			}
+		],
+		"status": "ready",
+		"dateAdded": 1718834812,
+		"dateLastModified": 1718834823
+	},
+	"subclass": [
+		{
+			"name": "College of the Arcane Tailor",
+			"source": "EXPCC",
+			"className": "Bard",
+			"classSource": "PHB",
+			"page": 10,
+			"shortName": "Tailor",
+			"subclassFeatures": [
+        "College of the Arcane Tailor|Bard||Tailor|EXPCC|3",
+        "A Tailored Experience|Bard||Tailor|EXPCC|6",
+        "It's All in the Stitching|Bard||Tailor|EXPCC|14"
+			]
+		}
+	],
+	"subclassFeature": [
+		{
+			"name": "College of the Arcane Tailor",
+			"source": "EXPCC",
+			"page": 10,
+			"className": "Bard",
+			"classSource": "PHB",
+			"subclassShortName": "Tailor",
+			"subclassSource": "EXPCC",
+			"level": 3,
+			"entries": [
+			  "Bardic Colleges teach bards many ways to imbue their performances with arcane power. The college of Arcane Tailors dedicates itself to making costumes that enthrall and intrigue. The Bardic Regalia they create are famous for being the centrepieces of great performances and powerful arcane catalysts.",
+			  {
+				"type": "refSubclassFeature",
+				"subclassFeature": "Bardic Regalia|Bard||Tailor|EXPCC|3"
+			  },
+			  {
+				"type": "refSubclassFeature",
+				"subclassFeature": "Bewitching Raiments|Bard||Tailor|EXPCC|3"
+			  }
+			]
+		},
     {
       "name": "Bardic Regalia",
-      "source": "EXPcharacterCreation",
+      "source": "EXPCC",
       "page": 10,
       "className": "Bard",
       "classSource": "PHB",
@@ -65,8 +70,9 @@
     },
     {
       "name": "Bewitching Raiments",
-      "source": "EXPcharacterCreation",
-      "className": "Bard",
+      "source": "EXPCC",
+			"page": 10,
+			"className": "Bard",
       "classSource": "PHB",
       "subclassShortName": "Tailor",
       "subclassSource": "EXPcharacterCreation",
@@ -78,8 +84,9 @@
     },
     {
       "name": "A Tailored Experience",
-      "source": "EXPcharacterCreation",
-      "className": "Bard",
+      "source": "EXPCC",
+			"page": 10,
+			"className": "Bard",
       "classSource": "PHB",
       "subclassShortName": "Tailor",
       "subclassSource": "EXPcharacterCreation",
@@ -92,7 +99,8 @@
     },
     {
       "name": "It's All in the Stitching",
-      "source": "EXPcharacterCreation",
+      "source": "EXPCC",
+			"page": 10,
       "className": "Bard",
       "classSource": "PHB",
       "subclassShortName": "Tailor",
