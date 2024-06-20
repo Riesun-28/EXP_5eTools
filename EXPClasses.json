@@ -1,27 +1,34 @@
 {
   "_meta": {
     "sources": [
-      {
-        "json": "EXPcharacterCreation",
-        "full": "EXP Character Creation Options",
-        "abbreviation": "EXPCC",
-        "version": "3.1"
-      }
+        {
+            "json": "CollegeArcaneTailor",
+            "abbreviation": "CotAT",
+            "full": "College of the Arcane Tailor",
+            "authors": [
+                "Riesun"
+            ],
+            "convertedBy": [
+                "Riesun"
+            ],
+            "version": "1.0",
+            "url": "https://drive.google.com/file/d/1Mcc6MwgqBdCARhanhQjB3od-z13EYeXv/view"
+        }
     ],
-    "dateAdded": 1718834812,
-    "dateLastModified": 1718834823
+    "dateAdded": 1718924488,
+    "dateLastModified": 1718924488
   },
   "subclass": [
     {
       "name": "College of the Arcane Tailor",
-      "source": "EXPCC",
+      "source": "CollegeArcaneTailor",
       "className": "Bard",
       "classSource": "PHB",
       "shortName": "Tailor",
       "subclassFeatures": [
-        "College of the Arcane Tailor|Bard||Tailor|EXPcharacterCreation|3",
-        "A Tailored Experience|Bard||Tailor|EXPcharacterCreation|6",
-        "It's All in the Stitching|Bard||Tailor|EXPcharacterCreation|14"
+        "College of the Arcane Tailor|Bard||Tailor|CollegeArcaneTailor|3",
+        "A Tailored Experience|Bard||Tailor|CollegeArcaneTailor|6",
+        "It's All in the Stitching|Bard||Tailor|CollegeArcaneTailor|14"
       ],
       "foundryImg": "icons/equipment/back/cloak-collared-purple-gold.webp"
     }
@@ -29,33 +36,33 @@
     "subclassFeature": [
     {
       "name": "College of the Arcane Tailor",
-      "source": "EXPcharacterCreation",
+      "source": "CollegeArcaneTailor",
       "page": 10,
       "className": "Bard",
       "classSource": "PHB",
       "subclassShortName": "Tailor",
-      "subclassSource": "EXPcharacterCreation",
+      "subclassSource": "CollegeArcaneTailor",
       "level": 3,
       "entries": [
         "Bardic Colleges teach bards many ways to imbue their performances with arcane power. The college of Arcane Tailors dedicates itself to making costumes that enthrall and intrigue. The Bardic Regalia they create are famous for being the centrepieces of great performances and powerful arcane catalysts.",
         {
           "type": "refSubclassFeature",
-          "subclassFeature": "Bardic Regalia|Bard||Tailor|EXPCC|3"
+          "subclassFeature": "Bardic Regalia|Bard||Tailor|CollegeArcaneTailor|3"
         },
         {
           "type": "refSubclassFeature",
-          "subclassFeature": "Bewitching Raiments|Bard||Tailor|EXPCC|3"
+          "subclassFeature": "Bewitching Raiments|Bard||Tailor|CollegeArcaneTailor|3"
         }
       ]
     },
     {
       "name": "Bardic Regalia",
-      "source": "EXPcharacterCreation",
+      "source": "CollegeArcaneTailor",
       "page": 10,
       "className": "Bard",
       "classSource": "PHB",
       "subclassShortName": "Tailor",
-      "subclassSource": "EXPcharacterCreation",
+      "subclassSource": "CollegeArcaneTailor",
       "level": 3,
       "header": 1,
       "entries": [
@@ -65,11 +72,11 @@
     },
     {
       "name": "Bewitching Raiments",
-      "source": "EXPcharacterCreation",
+      "source": "CollegeArcaneTailor",
       "className": "Bard",
       "classSource": "PHB",
       "subclassShortName": "Tailor",
-      "subclassSource": "EXPcharacterCreation",
+      "subclassSource": "CollegeArcaneTailor",
       "level": 3,
       "header": 1,
       "entries": [
@@ -78,11 +85,11 @@
     },
     {
       "name": "A Tailored Experience",
-      "source": "EXPcharacterCreation",
+      "source": "CollegeArcaneTailor",
       "className": "Bard",
       "classSource": "PHB",
       "subclassShortName": "Tailor",
-      "subclassSource": "EXPcharacterCreation",
+      "subclassSource": "CollegeArcaneTailor",
       "level": 6,
       "entries": [
         "At 6th level, your knowledge of weaving magic into the fabric of your Regalia has improved. You may imbue your Bardic Regalia with the effects of one of the magic items listed below. If the item normally requires attunement, the Regalia does not. You can only have one of these items replicated at a time, and can swap the effect for another during any short or long rest.",
@@ -92,11 +99,11 @@
     },
     {
       "name": "It's All in the Stitching",
-      "source": "EXPcharacterCreation",
+      "source": "CollegeArcaneTailor",
       "className": "Bard",
       "classSource": "PHB",
       "subclassShortName": "Tailor",
-      "subclassSource": "EXPcharacterCreation",
+      "subclassSource": "CollegeArcaneTailor",
       "level": 14,
       "entries": [
         "At 14th level, you are able to use your mastery of magical tailoring to weave spells into the fabric of your Regalia. As an action, you may cast spells and store them into your Bardic Regalia. You may store a total number of spell slots equal to your proficiency modifier. These stored spells appear as patches to you but are invisible to others unless detected using effects like Detect Magic. You inherently know which patch contains which spell. These patches remain indefinitely on your person until used or dispelled. You may, as an action, open one of these patches and release its spell as if you were casting it normally."
