@@ -1230,7 +1230,7 @@
   "subclass": [
     {
       "name": "College of the Arcane Tailor",
-      "shortName": "Arcane Tailor",
+      "shortName": "Tailor",
       "source": "EXPCC",
       "className": "Bard",
       "classSource": "PHB",
